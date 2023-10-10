@@ -1,12 +1,12 @@
 # github.com/davecgh/go-spew v1.1.1
 ## explicit
 github.com/davecgh/go-spew/spew
+# github.com/nuvi/unicycle v0.6.2
+## explicit; go 1.20
+github.com/nuvi/unicycle/defaults
 # github.com/pmezard/go-difflib v1.0.0
 ## explicit
 github.com/pmezard/go-difflib/difflib
-# github.com/preston-wagner/unicycle v0.2.4
-## explicit; go 1.19
-github.com/preston-wagner/unicycle
 # github.com/stretchr/testify v1.8.4
 ## explicit; go 1.20
 github.com/stretchr/testify/assert

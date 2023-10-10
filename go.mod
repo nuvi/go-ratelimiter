@@ -1,9 +1,9 @@
-module github.com/preston-wagner/go-ratelimiter
+module github.com/nuvi/go-ratelimiter
 
 go 1.19
 
 require (
-	github.com/preston-wagner/unicycle v0.2.4
+	github.com/nuvi/unicycle v0.6.2
 	github.com/stretchr/testify v1.8.4
 )
 

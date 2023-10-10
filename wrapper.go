@@ -3,7 +3,7 @@ package ratelimiter
 import (
 	"errors"
 
-	"github.com/preston-wagner/unicycle"
+	"github.com/nuvi/unicycle/defaults"
 )
 
 type BasicLimitableCall[ARG_TYPE any, RETURN_TYPE any] func(arg ARG_TYPE) (RETURN_TYPE, error)
@@ -30,7 +30,7 @@ func RateLimitedRetryCall[ARG_TYPE any, RETURN_TYPE any](rl RateLimiter, retries
 			return result, err
 		}
 	}
-	return unicycle.ZeroValue[RETURN_TYPE](), RetriesExceeded{Retries: retries}
+	return defaults.ZeroValue[RETURN_TYPE](), RetriesExceeded{Retries: retries}
 }
 
 func WrapWithLimit[ARG_TYPE any, RETURN_TYPE any](rl RateLimiter, wrapped BasicLimitableCall[ARG_TYPE, RETURN_TYPE]) BasicLimitableCall[ARG_TYPE, RETURN_TYPE] {
